@@ -1,46 +1,102 @@
 body {
+    width: 98vw;
     margin: 0;
-    background: linear-gradient(45deg, #23bad4, #1c3b80);
-    font-family: cursive;
+    background: center/cover url("https://i.pinimg.com/originals/bf/e0/ff/bfe0fff75f29c5bfab4cb116ba4b0d65.jpg");
+    font-family: 'Architects Daughter', cursive;
 }
 
-h1 {
-    width: 50%;
-    margin: 2% auto;
-    text-align: center;
-    font-size: 4rem;
-    color: #faf9e2;
+nav {
+    width: 100%;
+    height: 6%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #474239;
+    border-bottom: 1px solid black;
 }
 
-table {
-    margin: auto;
-    text-align: center;
+nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.nav-link a {
+    text-decoration: none;
+    color: rgb(255, 254, 242);
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    transform: translateY(2px);
+    text-decoration: underline;
+}
+
+.plan-group {
+    margin: 0 auto;
+    margin-top: 7.5%;
+    width: 80%;
+}
+
+.plan-group h2 {
+    font-size: 2rem;
+    background-color: #474239;
+    padding-left: 5%;
+    border-bottom: 5px inset rgb(255, 254, 242);
+    border-right: 5px inset rgb(255, 254, 242);
+    color: rgb(255, 254, 242);
+    margin-bottom: 0;
+}
 
 .plan {
     display: inline-block;
+    vertical-align: top;
     width: 30%;
-    height: 500px;
-    background-color: #faf9e2;
+    height: 80%;
+    background-color: rgba(255, 254, 242, 0.85);
+    border: 1px solid black;
+    padding-bottom: 1%;
     margin: 1%;
     box-sizing: border-box;
     border-radius: 5%;
-    color: #1c3b80;
+    color: #474239;
+    font-size: 1rem;
+}
+
+.plan h3 {
+    margin: 3% 1% 0 0;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.plan hr {
+    width: 80%;
+    color: #474239;
+    margin: 0 0 0 1%;
 }
 
 .plan img {
-    width: 90%;
-    height: 50%;
+    width: 22vw;
+    height: 35vh;
     border: 1px solid black;
     border-radius: 3%;
-    padding: 5px;
-    margin: 5px;
+    padding: 1vh 0.5vw;
+    margin: 1vh auto;
+    display: block;
     background-color: white;
 }
 
-.plan h2{
-    margin: 10% 0 0 0;
+.plan h4 {
+    font-size: 1.5rem;
+    padding-left: 5%;
+    margin: 0;
 }
 
 .plan ul {
@@ -55,5 +111,13 @@ table {
 }
 
 .plan a:hover {
-    color: red;
+    color: darkblue;
+}
+
+.plan a:visited {
+    color: #474239;
+}
+
+.plan a:visited:hover {
+    color: darkblue;
 }
