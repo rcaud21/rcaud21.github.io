@@ -31,7 +31,7 @@ nav ul {
 .nav-link a {
     text-decoration: none;
     color: rgb(255, 254, 242);
-    font-size: 1.5rem;
+    font-size: clamp(0.25rem, 3vw, 1.5rem);
 }
 
 .nav-link:hover {
@@ -41,12 +41,16 @@ nav ul {
 
 .plan-group {
     margin: 0 auto;
-    margin-top: 7.5%;
+    margin-top: 3%;
     width: 80%;
 }
 
+.plan-group:first-of-type {
+    margin-top: 6%;
+}
+
 .plan-group h2 {
-    font-size: 2rem;
+    font-size: clamp(0.25rem, 5vw, 2rem);
     background-color: #474239;
     padding-left: 5%;
     border-bottom: 5px inset rgb(255, 254, 242);
@@ -67,12 +71,12 @@ nav ul {
     box-sizing: border-box;
     border-radius: 5%;
     color: #474239;
-    font-size: 1rem;
+    font-size: clamp(0.25rem, 1vw, 1rem);
 }
 
 .plan h3 {
     margin: 3% 1% 0 0;
-    font-size: 1.75rem;
+    font-size: clamp(0.25rem, 3vw, 1.75rem);
     text-align: center;
 }
 
@@ -83,8 +87,8 @@ nav ul {
 }
 
 .plan img {
-    width: 22vw;
-    height: 35vh;
+    height: 50%;
+    width: 80%;
     border: 1px solid black;
     border-radius: 3%;
     padding: 1vh 0.5vw;
@@ -94,7 +98,7 @@ nav ul {
 }
 
 .plan h4 {
-    font-size: 1.5rem;
+    font-size: clamp(0.25rem, 2vw, 1.5rem);
     padding-left: 5%;
     margin: 0;
 }
@@ -108,6 +112,7 @@ nav ul {
 .plan a {
     text-decoration: none;
     font-weight: 700;
+    color: #474239;
 }
 
 .plan a:hover {
@@ -120,4 +125,14 @@ nav ul {
 
 .plan a:visited:hover {
     color: darkblue;
+}
+
+@media(max-width: 520px) {
+    nav {
+        position: relative;
+    }
+    .plan {
+        width: 45%;
+        height: 30%;
+    }
 }
