@@ -139,9 +139,10 @@ nav ul {
     }
     .plan-group {
         justify-content: center;
+        width: 90%;
     }
     .plan {
-        width: 80%;
+        width: 95%;
         height: 50%;
     }
 }
